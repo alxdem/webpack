@@ -87,3 +87,25 @@ plugins: [
 yarn add -D clean-webpack-plugin
 ```
 
+## Команды (скрипты) для сборки
+```javascript
+"scripts": {
+    "dev": "webpack --mode development", // Собирает обычную версию
+    "build": "webpack --mode production" // Собирает минифицированную версию
+  },
+```
+
+## CSS
+Webpack понимает только javascript
+Loader - функционал, позволяющий работать Webpack с другими типами файлов
+- css-loader помогает понимать импорты css в js-файлы:
+```javascript
+import './styles/styles.css';
+```
+- style-loader - добаляет стили, которые мы описываем в секцию head
+
+## JSON
+Можно импортировать JSON:
+```javascript
+import json from './assets/json';
+```

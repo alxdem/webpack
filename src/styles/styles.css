@@ -1,0 +1,14 @@
+html {
+    background-color: #dde;
+}
+
+.container {
+    padding-top: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #215;
+    text-align: center;
+}
